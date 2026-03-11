@@ -1,0 +1,13 @@
+# Keep repository content text-only for docs/migrations and avoid binary diff issues in PR tooling.
+* text=auto eol=lf
+
+*.md text working-tree-encoding=UTF-8
+*.sql text working-tree-encoding=UTF-8
+
+# Common binary formats (never treated as text)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.zip binary
